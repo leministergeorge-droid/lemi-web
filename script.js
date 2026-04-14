@@ -1,6 +1,5 @@
 const menuToggle = document.getElementById("menuToggle");
 const mainNav = document.getElementById("mainNav");
-const contactForm = document.getElementById("contactForm");
 
 if (menuToggle && mainNav) {
   menuToggle.addEventListener("click", () => {
@@ -36,14 +35,6 @@ if ("IntersectionObserver" in window) {
   revealItems.forEach((item) => observer.observe(item));
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
-}
-
-if (contactForm) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    alert("Thank you for contacting Lemi Juice. We will get back to you soon.");
-    contactForm.reset();
-  });
 }
 
 /* Basic checks */

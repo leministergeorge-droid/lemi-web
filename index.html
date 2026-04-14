@@ -233,17 +233,23 @@
             </div>
             <div class="contact-item">
               <span>Location</span>
-              <strong>Usa, Arusha</strong>
+              <strong>usa river, Arusha</strong>
             </div>
           </div>
         </div>
 
-        <form class="contact-form" id="contactForm">
-          <input type="text" placeholder="Your Name" required />
-          <input type="tel" placeholder="Phone Number" required />
-          <input type="email" placeholder="Email Address" />
-          <textarea rows="5" placeholder="Write your message"></textarea>
+        <form class="contact-form" action="https://formspree.io/f/xdaykwrd" method="POST">
+  
+          <input type="text" name="name" placeholder="Your Name" required />
+        
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+        
+          <input type="email" name="email" placeholder="Email Address" required />
+        
+          <textarea name="message" rows="5" placeholder="Write your message" required></textarea>
+        
           <button type="submit" class="btn btn-primary">Send Message</button>
+        
         </form>
       </div>
     </section>
