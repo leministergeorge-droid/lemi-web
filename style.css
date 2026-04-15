@@ -329,7 +329,11 @@ textarea {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
-
+.orange-center {
+  grid-column: span 3;
+  justify-self: center;
+  max-width: 350px;
+}
 .product-card {
   background: #ffffff;
   border-radius: 30px;
@@ -623,6 +627,11 @@ textarea {
   .products-grid article:last-child,
   .why-grid div:last-child {
     grid-column: span 1;
+  }
+
+  /* 🔥 IMPORTANT — ADD THIS */
+  .orange-center {
+    grid-column: auto;
   }
 
   .footer-wrapper {
