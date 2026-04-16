@@ -467,6 +467,26 @@ textarea {
   color: #ffffff;
 }
 
+.social-links a {
+  display: inline-block;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #e1306c;
+  transform: translateY(-2px);
+}
+
+.handle {
+  font-size: 0.85rem;
+  margin-left: 6px;
+  color: #aaa;
+}
+
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
